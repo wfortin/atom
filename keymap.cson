@@ -1,0 +1,13 @@
+# Enable Emmet support in jsx files
+'atom-text-editor[data-grammar~="jsx"]:not([mini])':
+  'tab': 'emmet:expand-abbreviation-with-tab'
+# Reveal file in tree view
+'.platform-darwin':
+    'ctrl-cmd-r': 'tree-view:reveal-active-file'
+# Delete line (eclipse keymap)
+'atom-text-editor:not([mini])':
+  'cmd-d': 'editor:delete-line'
+# Move line up/down (eclipse keymap)
+'atom-workspace atom-text-editor:not([mini])':
+  'alt-down': 'editor:move-line-down'
+  'alt-up': 'editor:move-line-up'
